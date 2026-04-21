@@ -1,16 +1,13 @@
 # Cryptonomicon
 
-A Bitcoin-like cryptocurrency prototype in Python for educational purposes.
+A Bitcoin-like cryptocurrency prototype in Python.
 
-## Motivation
+## Overview
 
-Understanding how cryptocurrencies work at a systems level is difficult when the
-only available references are production codebases built for performance and scale.
-Cryptonomicon exists to close that gap. It implements a readable subset of a
-Bitcoin-like system in a single Python project: proof-of-work mining, RSA-based
-wallets, simple on-chain transfers, serialization, and chain validation. The
-goal is not to build a production currency, but to make the moving parts easy to
-inspect and modify.
+Cryptonomicon implements a compact Bitcoin-like system in a single Python
+project. It includes proof-of-work mining, RSA-based wallets, simple on-chain
+transfers, serialization, and chain validation. The codebase is designed to be
+small, readable, and easy to run locally.
 
 ## Features
 
@@ -97,8 +94,8 @@ print(bc.get_balance(w.address))  # 50 coins
 - The richer transaction model in `transaction.py` is only partially integrated.
 - Pending transactions receive basic structural validation, but the chain does
   not yet enforce full signature verification.
-- Balances are computed by scanning every block, which is fine for a teaching
-  project but not efficient at scale.
+- Balances are computed by scanning every block instead of using an indexed
+  state model.
 
 ## Testing
 
@@ -121,4 +118,4 @@ Contributions are welcome. To get started:
 3. Make your changes. Keep commits focused and atomic.
 4. Run the verification commands from [Testing](#testing).
 5. Open a pull request against `main` with a short description of the change and
-   why it is useful.
+   what it changes.
