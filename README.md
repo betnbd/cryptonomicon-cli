@@ -1,10 +1,10 @@
 # Cryptonomicon
 
-A Bitcoin-like cryptocurrency prototype in Python.
+A cryptocurrency and blockchain prototype in Python.
 
 ## Overview
 
-Cryptonomicon implements a compact Bitcoin-like system in a single Python
+Cryptonomicon implements a compact blockchain system in a single Python
 project. It includes proof-of-work mining, RSA-based wallets, simple on-chain
 transfers, serialization, and chain validation. The codebase is designed to be
 small, readable, and easy to run locally.

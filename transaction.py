@@ -9,7 +9,7 @@ class TransactionInput:
     """
     Represents an input to a transaction (UTXO being spent).
 
-    In Bitcoin's UTXO model, each input references a previous transaction output.
+    In a UTXO model, each input references a previous transaction output.
     """
 
     def __init__(self, tx_id: str, output_index: int, signature: str = None):
@@ -81,7 +81,7 @@ class Transaction:
     """
     Represents a cryptocurrency transaction using UTXO model.
 
-    Similar to Bitcoin, transactions consume inputs (UTXOs) and create outputs.
+    Transactions consume inputs (UTXOs) and create outputs.
     """
 
     def __init__(self, inputs: List[TransactionInput], outputs: List[TransactionOutput], timestamp: float = None):

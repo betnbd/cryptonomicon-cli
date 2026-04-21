@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Cryptonomicon - A Bitcoin-like cryptocurrency implementation in Python.
+Cryptonomicon - A cryptocurrency and blockchain implementation in Python.
 
 This CLI provides an interface to interact with the blockchain,
 create wallets, and send transactions.

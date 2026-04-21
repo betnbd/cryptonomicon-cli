@@ -11,8 +11,8 @@ class Wallet:
     """
     Represents a cryptocurrency wallet with public/private key pair.
 
-    Similar to Bitcoin, this wallet uses asymmetric cryptography for
-    signing transactions and generating addresses.
+    This wallet uses asymmetric cryptography for signing transactions
+    and generating addresses.
     """
 
     def __init__(self, private_key: str = None):
@@ -34,8 +34,6 @@ class Wallet:
     def generate_address(self) -> str:
         """
         Generate a wallet address from the public key.
-
-        Similar to Bitcoin, we hash the public key to create an address.
 
         Returns:
             The wallet address (hex string)
