@@ -11,3 +11,5 @@ env/
 *_wallet.json
 wallet*.json
 test_wallet.json
+TASKS.local.md
+PROJECT.local.md
