@@ -119,3 +119,7 @@ Contributions are welcome. To get started:
 4. Run the verification commands from [Testing](#testing).
 5. Open a pull request against `main` with a short description of the change and
    what it changes.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
